@@ -1,9 +1,14 @@
-const About = () => { 
- return(
-<div className>
-About
-</div>
- )
-}
+import Image from "next/image";
+import styles from "./about.module.css";
 
-export default About;
+const AboutPage = () => {
+  return (
+    <div>
+      <div className={styles.imgConatiner}>
+    P
+      </div>
+    </div>
+  );
+};
+
+export default AboutPage;

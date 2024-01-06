@@ -1,13 +1,19 @@
+"use client";
+import { usePathname } from "next/navigation";
+import styles from "./navLink.module.css";
+import Link from "next/link";
 
-const NavLink = () => { 
+
+const NavLink = ({item}) => { 
+ // adding active classes
+    const pathName= usePathname();
+
     return(
-        <div className={styles.container}>
-        <div className={styles.logo}>Logo</div>
-        <div>
-        <Links/>
-       </div>
-</div>
-
+        <Link href={item.path} 
+        className={`${styles.container} 
+         ${pathName === item.path && styles.active}`}>
+        {item.title}
+        </Link>
     )
    }
    
