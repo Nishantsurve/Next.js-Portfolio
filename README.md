@@ -1,1 +1,1 @@
-# Building Portfolio in Next.js and Tailwind CSS
+# Building Portfolio with Next.js and Tailwind CSS
